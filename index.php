@@ -45,9 +45,8 @@ function cartAction(action, product_code) {
         success : function(data) {
             $("#cart-item").html(data);
             if (action == "add") {
-                $("#add_" + product_code + " img").attr("src",
-                        "images/icon-check.png");
-                $("#add_" + product_code).attr("onclick", "");
+                
+                $("#add_" + product_code).attr("", "");
             }
         },
         error : function() {
